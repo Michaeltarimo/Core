@@ -24,16 +24,16 @@ const Footer = () => {
 				</div>
 				<div className="flex flex-col text-dark/70 items-start gap-4 lg:items-center lg:justify-center md:gap-2">
 					<span className="text-sm font-bold  sm:text-sm font-sans">Let&apos;s Work Together</span>
-					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px]">Raise Capital</a>
 					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px]">Success stories</a>
+					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px]">Raise Capital</a>
 					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px] sm:mb-4">Partnerships</a>
 
 				</div>
 				<div className="flex flex-col text-dark/70 items-start gap-4 justify-start lg:items-center lg:justify-center lg:gap-2">
 					<span className="text-sm font-bold font-sans">Need Help</span>
-					<a href="#" className="font-medium hover:font-semibold  text-[12px]">Contact Us</a>
-					<a href="#" className="font-medium hover:font-semibold  text-[12px]">Terms of Use</a>
-					<a href="#" className="font-medium hover:font-semibold text-[12px]">Privacy Policy</a>
+					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px]">Privacy Policy</a>
+					<a href="#" className="font-medium hover:font-semibold  text-[12px] lg:text-[15px]">Terms of Use</a>
+					<a href="#" className="font-medium hover:font-semibold text-[12px] lg:text-[15px]">Contact Us</a>
 				</div>
 				<nav className=" flex flex-col items-center justify-between lg:pt-4">
 					<div className="flex flex-col gap-4 xs:flex-row items-center justify-center">

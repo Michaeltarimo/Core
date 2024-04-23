@@ -10,7 +10,7 @@ const RecentProjects = () => {
         <div className="flex flex-col pt-20">
             <div className="flex flex-col items-center justify-center">
                 <h1 className="font-semibold text-3xl">Closing Soon</h1>
-                <p className="font-semibold text-gray-500">Projects whose investment rounds will close soon</p>
+                <p className="font-semibold text-gray-500">Startups rounds closing soon</p>
             </div>
 
             <div className="flex flex-row lg:flex-col items-center justify-between gap-12 p-4">

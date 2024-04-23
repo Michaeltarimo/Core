@@ -37,7 +37,7 @@ const index = () => {
             <div className='w-1/2 flex flex-col items-center self-center md:pt-10 sm:pt-0 lg:w-full lg:text-center'>
               <AnimatedText
                 text={text}
-                className='!normal-case text-dark/70 text-4xl text-left xl:text-3xl lg:text-center lg:text-3xl md:text-3xl xs:text-3xl' // Adjust text size here
+                className="!normal-case text-dark/70 text-4xl text-left xl:text-3xl lg:text-center lg:text-3xl md:text-3xl xs:text-3xl" // Adjust text size here
               />
               <p className='my-4 text-sm font-medium md:text-sm sm:text-xs'>
                 Start Your Startup Journey: Invest Early, Raise Funds, and Connect with Investors

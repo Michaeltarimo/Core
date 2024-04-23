@@ -34,7 +34,7 @@ const index = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center md:pt-10 sm:pt-0 lg:w-full lg:text-center'>
+            <div className='w-1/2 order-first flex flex-col items-center self-center md:pt-10 sm:pt-0 lg:w-full lg:text-center'>
               <AnimatedText
                 text={text}
                 className="!normal-case text-dark/70 text-4xl text-left xl:text-3xl lg:text-center lg:text-3xl md:text-3xl xs:text-3xl" // Adjust text size here

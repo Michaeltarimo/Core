@@ -75,15 +75,15 @@ const index = () => {
           </p>
           <div className="flex flex-row items-center justify-center gap-[200px] sg:gap-20 sm:gap-10 tm:flex-col">
             <nav className="flex flex-col items-center gap-2">
-              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">402M+</h1>
+              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">000M+</h1>
               <h1 className="font-bold text-lg lg:text-base tm:text-lg">Transactions</h1>
             </nav>
             <nav className="flex flex-col items-center gap-2">
-              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">2930+</h1>
+              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">0000+</h1>
               <h1 className="font-bold text-lg lg:text-base tm:text-lg">Investment Opportunities</h1>
             </nav>
             <nav className="flex flex-col items-center gap-2">
-              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">103+</h1>
+              <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">000+</h1>
               <h1 className="font-bold text-lg lg:text-base tm:text-lg">Investors</h1>
             </nav>
           </div>

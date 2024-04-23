@@ -16,7 +16,7 @@ const CustomMobileLink = ({ href, title, className = "", toogle }) => {
   }
 
   return (
-    <button href={href} className={`relative group text-dark/70 hover:text-theme dark:text-dark my-2 ${className}`} onClick={handleClick} >
+    <button href={href} className={`relative group text-dark/70 hover:text-theme my-2 ${className}`} onClick={handleClick} >
       {title}
       <span
         className={`
@@ -24,7 +24,7 @@ const CustomMobileLink = ({ href, title, className = "", toogle }) => {
         absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300
         ${router.asPath === href ? 'w-full' : 'w-0'}
-       dark:bg-dark`}
+       `}
       >&nbsp;</span>
     </button>
   );
@@ -60,9 +60,9 @@ const NavBar = () => {
 
         <nav className="flex items-center gap-5 ml-10">
           <button className="flex-col justify-center items-center hidden md:flex" onClick={handleClick}>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+            <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+            <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+            <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
           </button>
           <Image src={logo} alt="logo" className="w-12 h-12 rounded-full shadow-lg shadow-theme bg-green-200" />
           <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
@@ -87,7 +87,7 @@ const NavBar = () => {
               initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
               animate={{ scale: 1, opacity: 1 }}
 
-              className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
+              className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light  rounded-lg backdrop-blur-md py-32">
               <nav className="flex items-center flex-col justify-center">
                 <CustomMobileLink href="/" title="Invest" className='' toogle={handleClick} />
                 <CustomMobileLink href="/" title="Raise Capital" className='' toogle={handleClick} />

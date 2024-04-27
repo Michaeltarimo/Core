@@ -21,8 +21,8 @@ const RecentProjects = () => {
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">10 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                            <h1 className="font-bold text-[18px] text-gray-800">Touch wireless</h1>
-                            <p className="text-xs font-medium text-gray-500 pb-4">Innovative Touch wireless</p>
+                            <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                            <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                             <hr />
 
                             <div className="pt-2 text-lg text-green-800 flex justify-between items-center">
@@ -49,8 +49,8 @@ const RecentProjects = () => {
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">7 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                            <h1 className="font-bold text-[18px] text-gray-800">Flower Turbines</h1>
-                            <p className="text-xs font-medium text-gray-500 pb-4">Innovative small wind turbines</p>
+                            <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                            <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                             <hr />
 
                             <div className="pt-2 text-lg text-green-800 flex justify-between items-center">
@@ -77,8 +77,8 @@ const RecentProjects = () => {
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">12 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                            <h1 className="font-bold text-[18px] text-gray-800">Kala Waters</h1>
-                            <p className="text-xs font-medium text-gray-500 pb-4">Innovative bottled dispensers</p>
+                            <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                            <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                             <hr />
 
                             <div className="pt-2 text-lg text-green-800 flex justify-between items-center">

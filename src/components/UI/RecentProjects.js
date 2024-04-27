@@ -18,8 +18,8 @@ const RecentProjects = () => {
                 <div className="">
                     <Image src={image4} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg"/>
                     <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                        <h1 className="font-bold text-[18px] text-gray-800">Touch wireless</h1>
-                        <p className="text-xs font-medium text-gray-500 pb-4">Innovative Touch wireless</p>
+                        <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                        <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                         <hr/>
 
                         <div className="pt-2 text-lg text-green-800 flex justify-between items-center">
@@ -43,8 +43,8 @@ const RecentProjects = () => {
                 <div className="">
                     <Image src={image2} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg"/>
                     <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                        <h1 className="font-bold text-[18px] text-gray-800">Flower Turbines</h1>
-                        <p className="text-xs font-medium text-gray-500 pb-4">Innovative small wind turbines</p>
+                        <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                        <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                         <hr/>
 
                         <div className="pt-2 text-lg text-green-800 flex justify-between items-center">
@@ -68,8 +68,8 @@ const RecentProjects = () => {
                 <div className="">
                     <Image src={image1} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg"/>
                     <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
-                        <h1 className="font-bold text-[18px] text-gray-800">Kala Waters</h1>
-                        <p className="text-xs font-medium text-gray-500 pb-4">Innovative bottled dispensers</p>
+                        <h1 className="font-bold text-[18px] text-gray-800">Demo project</h1>
+                        <p className="text-xs font-medium text-gray-500 pb-4">This is a demo project</p>
                         <hr/>
 
                         <div className="pt-2 text-lg text-green-800 flex justify-between items-center">

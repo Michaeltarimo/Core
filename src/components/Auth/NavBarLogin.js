@@ -2,14 +2,14 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import logo from '@/../public/brandkit/logo.png'
 import Link from 'next/link'
-import NavBarMobile from './NavBarMobile';
+import NavBarMobile from '../UI/NavBarMobile';
 
 
 
-const NavBar = () => {
+const NavBarLogin = () => {
   const [active, setActive] = useState(false);
   const isActive = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false) 
+    window.scrollY > 0 ? setActive(true) : setActive(false)
   }
 
   useEffect(() => {
@@ -33,13 +33,8 @@ const NavBar = () => {
           <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
         </Link>
         <nav className="flex items-center justify-center gap-8 mr-10">
-          <Link href="/" className="hover:text-theme md:hidden">Invest</Link>
-          <Link href="/" className="hover:text-theme md:hidden">Raise Capital</Link>
-          <Link href="/" className="hover:text-theme md:hidden">Liquidity</Link>
-          <Link href="/" className="hover:text-theme og:hidden">Insights</Link>
-          <Link href="/" className="hover:text-theme og:hidden">Learn</Link>
-          <Link href="/login/page" className="hover:text-theme">Login</Link>
-          <Link href="/register/page" className="hover:text-theme">Sign Up</Link>
+          <Link href="" className="text-dark font-extrabold text- shadow-sm px-2 py-1 bg-theme/40 rounded-md shadow-theme">Login</Link>
+          <Link href="/register/page" className="hover:text-theme text-">Sign Up</Link>
         </nav>
       </div>
       <NavBarMobile />
@@ -47,4 +42,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBarLogin;

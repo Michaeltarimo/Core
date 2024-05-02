@@ -9,8 +9,9 @@ import Button from '@/components/UI/Button'
 import Link from 'next/link'
 import { ChartBarIcon, HandIcon, OfficeBuildingIcon } from '@heroicons/react/outline'
 import Subscribe from '@/components/UI/Subscribe'
-import RecentProjects from '@/components/UI/RecentProjects';
-import ClosingProjects from '@/components/UI/ClosingProjects'
+import RecentProjects from '@/components/Project/RecentProjects';
+import ClosingProjects from '@/components/Project/ClosingProjects'
+import NavBar from '@/components/UI/NavBar'
 
 const index = () => {
   const text = 'Startup Venture Capital: Invest & Raise Funds';
@@ -25,6 +26,7 @@ const index = () => {
                                         can participate to become part of early ivestors in startups' />
       </Head>
       <TransitionEffect />
+      <NavBar />
       <main className="flex flex-col items-center text-dark w-full min-h-screen text-dark/70">
         <Layout className='pt-10 lg:mt-0'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
@@ -34,10 +36,10 @@ const index = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <div className='w-1/2 order-first flex flex-col items-center self-center md:pt-10 sm:pt-0 lg:w-full lg:text-center'>
+            <div className='w-1/2 flex flex-col items-center self-center md:pt-10 sm:pt-0 lg:w-full lg:text-center'>
               <AnimatedText
                 text={text}
-                className="!text-dark/70 text-4xl text-left xl:text-3xl lg:text-center lg:text-3xl md:text-3xl xs:text-3xl" // Adjust text size here
+                className='!normal-case text-dark/70 text-4xl text-left xl:text-3xl lg:text-center lg:text-3xl md:text-3xl xs:text-3xl' // Adjust text size here
               />
               <p className='my-4 text-sm font-medium md:text-sm sm:text-xs'>
                 Start Your Startup Journey: Invest Early, Raise Funds, and Connect with Investors
@@ -93,7 +95,7 @@ const index = () => {
             Check Our <b className="italic">Portfolio</b>
           </Button>
         </Link>
-        <div className="w-[85%] flex flex-col items-center justify-between p-[120px] sm:p-20 tm:p-5 border-t-4 border-theme  shadow-lg shadow-gray-300">
+        <div className="w-[85%] flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 items-center justify-between p-[120px] sm:p-20 tm:p-5 border-t-4 border-theme  shadow-lg shadow-gray-300">
           <h1 className="font-bold text-3xl pb-5 xs:text-2xl">How does it work?</h1>
           <div className="pt-10 flex items-center justify-center lg:flex-col lg:gap-10">
             <div className="flex flex-col items-center justify-center gap-6 px-4 yl:px-0 lg:px-4">
@@ -104,7 +106,7 @@ const index = () => {
             <div className="flex flex-col items-center justify-center gap-6 px-4 yl:px-0 lg:px-4">
               <h1 className="text-3xl rounded-full text-whiter font-extrabold px-3.5 py-3 bg-theme">02</h1>
               <h1 className="font-bold text-[18px]">Invest with confidence.</h1>
-              <p className="text-center">Make investments at your own pace and manage them online</p>
+              <p className="text-center">Become part of the company you invested and play a role in its future</p>
             </div>
             <div className="flex flex-col items-center justify-center gap-6 px-4 yl:px-0 lg:px-4">
               <h1 className="text-3xl rounded-full text-whiter font-extrabold px-3.5 py-3 bg-theme">03</h1>
@@ -124,7 +126,7 @@ const index = () => {
           </nav>
           <h1 className="font-bold text-3xl pb-5 lg:text-2xl text-center tm:text-xl">a broad range of private market investments.</h1>
           <Layout className="flex flex-row gap-7 lg:flex-col">
-            <div className="flex flex-col rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+            <div className="flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
               <ChartBarIcon className="h-12 w-12 shadow-sm shadow-theme text-dark/40" />
               <h1 className="text-xl font-bold">Equity crowdfunding</h1>
               <p>Pre-vetted startup investments open for Everyone</p>
@@ -132,7 +134,7 @@ const index = () => {
                 Invest in startups
               </Link>
             </div>
-            <div className="flex flex-col rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+            <div className="flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
               <HandIcon className="h-12 w-12 shadow-sm shadow-theme text-dark/40" />
               <h1 className="text-xl font-bold">Accredited investments</h1>
               <p>Early & Late-Stage primary/secondary investment options</p>
@@ -140,7 +142,7 @@ const index = () => {
                 Sign up now
               </Link>
             </div>
-            <div className="flex flex-col rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+            <div className="flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 rounded-sm shadow-sm shadow-gray-400 gap-5 p-10 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
               <OfficeBuildingIcon className="h-12 w-12 shadow-sm shadow-theme text-dark/40" />
               <h1 className="text-xl font-bold">Raise capital</h1>
               <p>Register and request to raise capital for your startup/company</p>

@@ -13,7 +13,7 @@ module.exports = {
         mono: ['var(--font-roboto-mono)'],
       },
       colors: {
-        dark: "#1b1b1b",
+        dark: "#1d2a39",
         light: "#f5f5f5",
         primary: "#097969", // 240,86,199
         primaryDark: "#188544", // 80,230,217

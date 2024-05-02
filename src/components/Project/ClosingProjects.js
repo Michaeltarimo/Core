@@ -18,7 +18,7 @@ const RecentProjects = () => {
                 <Link href="/project/page"  className="flex cursor-pointer items-center lg:w-full justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
-                            <Image src={image4} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
+                            <Image src={image4} alt="" className="w-[340px] transition-transform duration-300 transform hover:scale-105 h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">10 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
@@ -46,7 +46,7 @@ const RecentProjects = () => {
                 <Link href="/project/page" className="flex cursor-pointer items-start justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
-                            <Image src={image2} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
+                            <Image src={image2} alt="" className="w-[340px] transition-transform duration-300 transform hover:scale-105 h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">7 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">
@@ -74,7 +74,7 @@ const RecentProjects = () => {
                 <Link href="/project/page" className="flex cursor-pointer items-start justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
-                            <Image src={image1} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
+                            <Image src={image1} alt="" className="w-[340px] transition-transform duration-300 transform hover:scale-105 h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
                             <button className="bg-light font-bold text-sm text-red-700 p-1 px-6 rounded-t-full absolute bottom-0 left-0 transform translate-X-[10%]">12 days left</button>
                         </div>
                         <div className="rounded-lg shadow-theme shadow-sm px-4 p-6 z-10">

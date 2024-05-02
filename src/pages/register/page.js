@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import signUp from "@/firebase/auth/signup";
 import { useRouter } from 'next/navigation'
 import banner from '@/../public/brandkit/banner.webp'
 import google from '@/../public/brandkit/google.png'

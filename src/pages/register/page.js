@@ -12,23 +12,7 @@ import { HiAtSymbol, HiFingerPrint, HiOutlineUser, HiBadgeCheck } from "react-ic
 import NavBarAuth from '@/components/Auth/NavBarAuth';
 
 const page = () => {
-    const [email, setEmail] = React.useState('')
-    const [password, setPassword] = React.useState('')
-    const router = useRouter()
-
-    const handleForm = async (event) => {
-        event.preventDefault()
-
-        const { result, error } = await signUp(email, password);
-
-        if (error) {
-            return console.log(error)
-        }
-
-        // else successful
-        console.log(result)
-        return router.push("/admin/page")
-    }
+    
 
 
     //the checkbox goes here
@@ -87,7 +71,6 @@ const page = () => {
                                     <div className="relative flex flex-row items-center justify-center pt-4">
                                         <label htmlFor="email">
                                             <input
-                                                onChange={(e) => setEmail(e.target.value)}
                                                 onFocus={() => setIsFocused(true)}
                                                 onBlur={() => setIsFocused(false)}
                                                 placeholder="email@address.com"
@@ -102,7 +85,6 @@ const page = () => {
                                     <div className="relative flex flex-row items-center justify-center pt-4">
                                         <label htmlFor="password">
                                             <input
-                                                onChange={(e) => setPassword(e.target.value)}
                                                 onFocus={() => setIsFocused2(true)}
                                                 onBlur={() => setIsFocused2(false)}
                                                 placeholder="Password"
@@ -116,7 +98,6 @@ const page = () => {
                                     <div className="relative flex flex-row items-center justify-center pt-4">
                                         <label htmlFor="password">
                                             <input
-                                                onChange={(e) => setPassword(e.target.value)}
                                                 onFocus={() => setIsFocused3(true)}
                                                 onBlur={() => setIsFocused3(false)}
                                                 placeholder="Confirm Password"
@@ -160,7 +141,6 @@ const page = () => {
                                     <div className="relative flex flex-row items-center justify-start pt-4">
                                         <label htmlFor="email">
                                             <input
-                                                onChange={(e) => setEmail(e.target.value)}
                                                 onFocus={() => setIsFocused(true)}
                                                 onBlur={() => setIsFocused(false)}
                                                 placeholder="First Name"
@@ -175,7 +155,6 @@ const page = () => {
                                     <div className="relative flex flex-row items-center justify-start pt-4">
                                         <label htmlFor="email">
                                             <input
-                                                onChange={(e) => setEmail(e.target.value)}
                                                 onFocus={() => setIsFocused2(true)}
                                                 onBlur={() => setIsFocused2(false)}
                                                 placeholder="Last Name"

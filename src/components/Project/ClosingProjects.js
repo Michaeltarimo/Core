@@ -4,6 +4,7 @@ import image1 from '@/../public/brandkit/demo.webp'
 import image2 from '@/../public/brandkit/demo1.webp'
 import image3 from '@/../public/brandkit/demo2.webp'
 import image4 from '@/../public/brandkit/demo3.webp'
+import Link from 'next/link'
 
 const RecentProjects = () => {
     return (
@@ -14,7 +15,7 @@ const RecentProjects = () => {
             </div>
 
             <div className="flex flex-row lg:flex-col items-center justify-between gap-12 p-4">
-                <div className="flex items-center lg:w-full justify-between pt-6">
+                <Link href="/project/page"  className="flex cursor-pointer items-center lg:w-full justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
                             <Image src={image4} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
@@ -40,9 +41,9 @@ const RecentProjects = () => {
                         </div>
 
                     </div>
-                </div>
+                </Link>
 
-                <div className="flex items-start justify-between pt-6">
+                <Link href="/project/page" className="flex cursor-pointer items-start justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
                             <Image src={image2} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
@@ -68,9 +69,9 @@ const RecentProjects = () => {
                         </div>
 
                     </div>
-                </div>
+                </Link>
 
-                <div className="flex items-start justify-between pt-6">
+                <Link href="/project/page" className="flex cursor-pointer items-start justify-between pt-6">
                     <div className="">
                         <div className="relative inline-block">
                             <Image src={image1} alt="" className="w-[340px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl rounded-r-xl shadow-theme shadow-lg" />
@@ -96,7 +97,7 @@ const RecentProjects = () => {
                         </div>
 
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     )

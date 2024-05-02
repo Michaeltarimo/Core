@@ -65,7 +65,7 @@ const page = () => {
                             </div>
                             <h1 className="p-4 font-bold text-whiter text-dark/70 tm:hidden">- - - - - - - - <b className="font-bold text-whiter text-dark/70 md:text-sm">OR</b> - - - - - - - -</h1>
                             <h1 className="p-4 font-extrabold text-dark/70 hidden tm:block xs:text-sm">OR</h1>
-                            <form onSubmit={handleForm}>
+                            <form >
                                 <div className="pt-3">
                                     <div className="relative flex flex-row items-center justify-center pt-4">
                                         <label htmlFor="email">

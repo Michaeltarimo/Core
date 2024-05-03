@@ -74,7 +74,7 @@ const NavBar = () => {
                       }
                   ]}
            />
-          <Link href="/" className="hover:text-theme md:hidden">Liquidity</Link>
+          <Link href="/" className="hover:text-theme md:hidden">Our Company</Link>
           <DropLink 
                   href="/" 
                   className="hover:text-theme og:hidden" 

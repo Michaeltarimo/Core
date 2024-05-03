@@ -70,7 +70,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-center gap-8 mr-10">
           <Link href="/" className="hover:text-theme md:hidden">Invest</Link>
           <Link href="/" className="hover:text-theme md:hidden">Raise Capital</Link>
-          <Link href="/" className="hover:text-theme md:hidden">Liquidity</Link>
+          <Link href="/" className="hover:text-theme md:hidden">Our Company</Link>
           <Link href="/" className="hover:text-theme og:hidden">Insights</Link>
           <Link href="/" className="hover:text-theme og:hidden">Learn</Link>
           <Link href="/login/page" className="hover:text-theme">Login</Link>

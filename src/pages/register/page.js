@@ -9,6 +9,8 @@ import linkedin from '@/../public/brandkit/linkedin.png'
 import toast, { Toaster } from 'react-hot-toast';
 import { HiAtSymbol, HiFingerPrint, HiOutlineUser, HiBadgeCheck } from "react-icons/hi";
 import NavBarAuth from '@/components/Auth/NavBarAuth';
+import TransitionEffect from '@/components/UI/TransitionEffect'
+import Head from 'next/head'
 
 const page = () => {
     
@@ -46,7 +48,14 @@ const page = () => {
 
 
     return (
-        <>
+        <>  
+            <Head>
+                <title>Mbegu Africa | For Visionary Founders & Investors</title>
+                <meta name='description' content='Mbegu is a modern crowdfunding platform allowing both investors and founders to thrive.
+                                        Now, startups can raise enough rounds to launch their companies and succeed, and investors 
+                                        can participate to become part of early ivestors in startups' />
+            </Head>
+            <TransitionEffect />
             <NavBarAuth />
             <div className="flex flex-row  p-20 xl:p-10 bg-light xl:items-center xl:justify-center">
                 {activeSection === 'phase' && (

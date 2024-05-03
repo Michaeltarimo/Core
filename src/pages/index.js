@@ -52,7 +52,7 @@ const index = () => {
                   </Button>
                 </Link>
               </div>
-              <p className='my-4 text-[10px] lg:text-[8px] font-medium md:text-[10px] sm:text-[9px]'>
+              <p className='my-4 text-[10px] lg:text-[8px] font-light text-dark md:text-[10px] sm:text-[9px]'>
                 Some day, this section will be updating new investment opportunities.
                 Such investments which will be displayed, will be promising.
                 However, its up to an investor to think and make decisions.

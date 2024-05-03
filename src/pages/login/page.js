@@ -8,6 +8,8 @@ import linkedin from '@/../public/brandkit/linkedin.png'
 import { HiAtSymbol, HiFingerPrint } from "react-icons/hi";
 import { signIn } from "next-auth/react";
 import NavBarLogin from '@/components/Auth/NavBarLogin'
+import Head from 'next/head'
+import TransitionEffect from '@/components/UI/TransitionEffect'
 
 
 const page = () => {
@@ -29,6 +31,13 @@ const page = () => {
 
     return (
         <>
+            <Head>
+                <title>Mbegu Africa | For Visionary Founders & Investors</title>
+                <meta name='description' content='Mbegu is a modern crowdfunding platform allowing both investors and founders to thrive.
+                                        Now, startups can raise enough rounds to launch their companies and succeed, and investors 
+                                        can participate to become part of early ivestors in startups' />
+            </Head>
+            <TransitionEffect />
             <NavBarLogin />
             <div className="flex flex-row  p-20 xl:p-10 bg-light xl:items-center xl:justify-center">
                 <div className="flex w-1/2  p-0 items-center justify-center xl:hidden">

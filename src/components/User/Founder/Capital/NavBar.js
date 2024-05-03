@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import logo from '@/../public/brandkit/logo.png'
 import Link from 'next/link'
-import NavBarMobile from './NavBarMobile';
+import NavBarMobile from '@/components/UI/NavBarMobile';
 import { BadgeCheckIcon, CurrencyDollarIcon, LightBulbIcon, PencilAltIcon, QuestionMarkCircleIcon, ShoppingBagIcon, UserAddIcon } from '@heroicons/react/solid';
 import DropLink from '@/components/UI/DropLink'
 
@@ -57,14 +57,14 @@ const NavBar = () => {
           />
           <DropLink 
                   href="/" 
-                  className="hover:text-theme md:hidden"
+                  className="text-theme font-extrabold md:hidden"
                   title="For Founders"
                   dropdownItems={[
                       {
                           icon: CurrencyDollarIcon,
                           title: "Raise Capital",
                           description: "Raise your round to boost your business",
-                          href: "/founder/capital/page"
+                          href: "#"
                       },
                       {
                           icon: QuestionMarkCircleIcon,

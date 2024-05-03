@@ -91,7 +91,8 @@ const NavBar = () => {
               <nav className="flex items-center flex-col justify-center">
                 <CustomMobileLink href="/" title="Invest" className='' toogle={handleClick} />
                 <CustomMobileLink href="/" title="Raise Capital" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Liquidity" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="Our Company" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="Marketplace" className='' toogle={handleClick} />
                 <CustomMobileLink href="/" title="Learn" className='' toogle={handleClick} />
               </nav>
             </motion.div>

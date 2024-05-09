@@ -873,7 +873,7 @@ const Page = () => {
                     </div>
                     <div className={`w-[40%] flex flex-col items-center justify-start og:w-[80%] sm:w-full `}>
                         <div className="flex flex-col items-center justify-center shadow-lg shadow-gray-400 w-[80%] h-[7%] rounded-2xl bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 og:pb-10 xs:pb-5">
-                            <nav className="flex bg-gray-200 flex-col items-center justify-center shadow-xl shadow-gray-400 w-[90%] h-[20%] rounded-2xl og:mt-5">
+                            <nav className="flex bg-gray-200 flex-col items-center justify-center shadow-xl shadow-gray-400 w-[90%] sm:py-2.5 h-[20%] rounded-2xl og:mt-5">
                                 <Button className="flex shadow-sm shadow-gray-400 flex-col w-[90%] !py-1 !rounded-lg items-center justify-center bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400">
                                     <h1 className="text-lg text-dark font-extrabold">Get Equity</h1>
                                     <p1 className="text-sm text-dark font-medium">TZS 30K Per share</p1>

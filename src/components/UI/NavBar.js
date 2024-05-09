@@ -44,7 +44,7 @@ const NavBar = () => {
                 icon: LightBulbIcon,
                 title: "Startup Investing",
                 description: "Invest in early stage Startups & companies.",
-                href: "/"
+                href: "/invest/page"
             },
             {
                 icon: ShoppingBagIcon,
@@ -74,7 +74,7 @@ const NavBar = () => {
                       }
                   ]}
            />
-          <Link href="/" className="hover:text-theme md:hidden">Our Company</Link>
+          <Link href="/company/page" className="hover:text-theme md:hidden">Our Company</Link>
           <DropLink 
                   href="/" 
                   className="hover:text-theme og:hidden" 

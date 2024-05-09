@@ -68,9 +68,9 @@ const NavBar = () => {
           <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
         </nav>
         <nav className="flex items-center justify-center gap-8 mr-10">
-          <Link href="/" className="hover:text-theme md:hidden">Invest</Link>
-          <Link href="/" className="hover:text-theme md:hidden">Raise Capital</Link>
-          <Link href="/" className="hover:text-theme md:hidden">Our Company</Link>
+          <Link href="/invest/page" className="hover:text-theme md:hidden">Invest</Link>
+          <Link href="/founder/capital/page" className="hover:text-theme md:hidden">Raise Capital</Link>
+          <Link href="/company/page" className="hover:text-theme md:hidden">Our Company</Link>
           <Link href="/" className="hover:text-theme og:hidden">Insights</Link>
           <Link href="/" className="hover:text-theme og:hidden">Learn</Link>
           <Link href="/login/page" className="hover:text-theme">Login</Link>
@@ -89,10 +89,10 @@ const NavBar = () => {
 
               className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-theme/80  rounded-lg backdrop-blur-md py-32">
               <nav className="flex items-center flex-col justify-center">
-                <CustomMobileLink href="/" title="Invest" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Raise Capital" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Our Company" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Marketplace" className='' toogle={handleClick} />
+                <CustomMobileLink href="/invest/page" title="Invest" className='' toogle={handleClick} />
+                <CustomMobileLink href="/founder/capital/page" title="Raise Capital" className='' toogle={handleClick} />
+                <CustomMobileLink href="/company/page" title="Our Company" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="Insights" className='' toogle={handleClick} />
                 <CustomMobileLink href="/" title="Learn" className='' toogle={handleClick} />
               </nav>
             </motion.div>

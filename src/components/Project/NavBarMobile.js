@@ -65,8 +65,8 @@ const NavBar = () => {
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
           </button>
-          <Link href="/"><Image src={logo} alt="logo" className="w-12 h-12 md:hidden rounded-full shadow-lg shadow-theme bg-green-200" /></Link>
-          <Link href="/"><h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1></Link>
+          <Image src={logo} alt="logo" className="w-12 h-12 md:hidden rounded-full shadow-lg shadow-theme bg-green-200" />
+          <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
         </nav>
         <nav className="flex items-center justify-center gap-8 mr-10">
           <HeartIcon className="w-6 hover:text-red-500 cursor-pointer" />
@@ -85,11 +85,12 @@ const NavBar = () => {
 
               className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-theme/80  rounded-lg backdrop-blur-md py-32">
               <nav className="flex items-center flex-col justify-center">
-                <CustomMobileLink href="/" title="Home" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Invest" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Raise Capital" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Our Company" className='' toogle={handleClick} />
-                <CustomMobileLink href="/" title="Learn" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="HOME" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="OVERVIEW" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="ABOUT" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="TERMS" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="DISCUSSION" className='' toogle={handleClick} />
+                <CustomMobileLink href="/" title="INVESTING FAQs" className='' toogle={handleClick} />
               </nav>
             </motion.div>
 

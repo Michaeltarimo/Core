@@ -64,10 +64,8 @@ const NavBar = () => {
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
           </button>
-<Link href="/">
           <Image src={logo} alt="logo" className="w-12 h-12 rounded-full shadow-lg shadow-theme bg-green-200" />
-</Link>
-          <Link href="/"><h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1></Link>
+          <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
         </nav>
         <nav className="flex items-center justify-center gap-8 mr-10">
           <Link href="/" className="hover:text-theme md:hidden">Invest</Link>

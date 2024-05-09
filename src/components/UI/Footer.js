@@ -52,8 +52,8 @@ const Footer = () => {
 
 			<div className='flex text-sm items-center pt-10 lg:py-2 font-bold text-yellow-500 lg:text-xs'>
 				<p>Built by <Link target="_blank" href="https://gutoshi.vercel.app"
-					className='text-dark text-sm p-1 font-bold bg-theme rounded-lg'
-				>Gutoshi</Link>
+					className='text-dark text-sm p-1 font-bold'
+				>Mbegu Labs</Link>
 				</p>
 			</div>
 			<span className="font-bold text-dark/70 p-6">{new Date().getFullYear()} &copy; All Rights Reserved.</span>

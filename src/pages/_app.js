@@ -4,6 +4,7 @@ import { SessionProvider } from 'next-auth/react'; // Import SessionProvider fro
 import '@/styles/globals.css';
 import Footer from '../components/UI/Footer';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
       {/* Wrap your component tree with SessionProvider */}
       <SessionProvider session={pageProps.session}>
         <main className="font-poppins bg-light w-full min-h-screen">
+          <Analytics />
           <AnimatePresence mode="wait">
             <Component key={router.asPath} {...pageProps} />
           </AnimatePresence>

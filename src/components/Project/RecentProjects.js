@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import image1 from '@/../public/brandkit/demo.webp'
-import image2 from '@/../public/brandkit/demo1.webp'
-import image3 from '@/../public/brandkit/demo2.webp'
-import image4 from '@/../public/brandkit/demo3.webp'
+import image1 from '@/../public/brandkit/demo.jpg'
+import image2 from '@/../public/brandkit/demo.jpg'
+import image3 from '@/../public/brandkit/demo.jpg'
+import image4 from '@/../public/brandkit/demo.jpg'
 import Link from 'next/link'
 
 const RecentProjects = () => {

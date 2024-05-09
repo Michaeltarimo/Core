@@ -288,7 +288,7 @@ module.exports = {
       mg: { max: "1114px" },
       lg: { max: "1080px" },
       og: { max: "930px" },
-      sg: { max: "830px" },
+      sg: { max: "830px" }, 
 
 
       // => @media (max-width: 1023px) { ... }

@@ -64,7 +64,7 @@ const index = () => {
         <div className="flex flex-col items-center justify-center">
           <h1 className="font-bold text-3xl pb-5 xs:2xl">Why Mbegu <b className="italic">Africa</b>?</h1>
           <h1 className="border-b border-dark px-20 py-2"></h1>
-          <p className="px-[100px] py-10 text-center lg:text-sm">
+          <p className="px-[100px] sm:px-10 py-10 text-center lg:text-sm">
             We are committed to supporting the vibrant Tanzanian startup ecosystem, which continues to fuel economic
             growth and innovation. With an increase in startup-generated jobs by 14.65% from 2021 to 2022, reaching 89,509,
             entrepreneurs are playing a vital role in job creation and driving economic progress. Despite these achievements,

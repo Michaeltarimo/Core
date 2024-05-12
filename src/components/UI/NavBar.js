@@ -31,7 +31,7 @@ const NavBar = () => {
   const currentUser = {
         id:1,
         username:"Michael Tarimo",
-        isFounder:true
+        isFounder:false
   }
 
 

@@ -11,6 +11,9 @@ import SortSelect from './SortSelect'
 import ClosingProjects from '@/components/Project/ClosingProjects'
 import MostTrending from '../Project/Most Trending'
 import MostFunded from '../Project/MostFunded'
+import { projects, closings, funded, trending } from '@/data'
+import RecentProjects from '../Project/RecentProjects'
+
 
 
 
@@ -138,18 +141,28 @@ const Page = () => {
 
 
         {/**Projects section starts here */}
-
-
-        <div className="flex flex-col items-center justify-center pt-20">
-          <MostTrending />
+        <div className="w-[85%] sm:w-full mt-10 flex flex-col items-center justify-center bg-gradient-to-bl from-white via-gray-100/90 to-gray-200/90 shadow-sm shadow-gray-300">
+          <div className="flex flex-row gap-10 lg:flex-col">
+            {projects.map(card => (
+              <RecentProjects item={card} key={card.id} />
+            ))}
+          </div>
+          <div className="flex flex-row gap-10 lg:flex-col my-10">
+            {closings.map(card => (
+              <ClosingProjects item={card} key={card.id} />
+            ))}
+          </div>
+          <div className="flex flex-row gap-10 lg:flex-col">
+            {funded.map(card => (
+              <MostFunded item={card} key={card.id} />
+            ))}
+          </div>
+          <div className="flex flex-row gap-10 lg:flex-col my-10">
+            {trending.map(card => (
+              <MostTrending item={card} key={card.id} />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col items-start justify-start pt-20">
-          <MostFunded />
-        </div>
-        <div className="flex flex-col items-start justify-start pt-10">
-          <ClosingProjects />
-        </div>
-
         {/**Projects section ends here */}
 
         <div className="flex flex-col items-center justify-center py-20">

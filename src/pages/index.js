@@ -12,6 +12,7 @@ import Subscribe from '@/components/UI/Subscribe'
 import RecentProjects from '@/components/Project/RecentProjects';
 import ClosingProjects from '@/components/Project/ClosingProjects'
 import NavBar from '@/components/UI/NavBar'
+import { projects, closings } from '@/data'
 
 const index = () => {
   const text = 'Startup Venture Capital: Invest & Raise Funds';
@@ -95,7 +96,7 @@ const index = () => {
             Check Our <b className="italic">Portfolio</b>
           </Button>
         </Link>
-        <div className="w-[85%] flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 items-center justify-between p-[120px] sm:p-20 tm:p-5 border-t-4 border-theme  shadow-lg shadow-gray-300">
+        <div className="w-[85%] sm:w-full flex flex-col bg-gradient-to-br from-yellow-200/50 via-yellow-200 to-yellow-400 items-center justify-between p-[120px] sm:p-20 tm:p-5 border-t-4 border-theme  shadow-lg shadow-gray-300">
           <h1 className="font-bold text-3xl pb-5 xs:text-2xl">How does it work?</h1>
           <div className="pt-10 flex items-center justify-center lg:flex-col lg:gap-10">
             <div className="flex flex-col items-center justify-center gap-6 px-4 yl:px-0 lg:px-4">
@@ -116,6 +117,25 @@ const index = () => {
           </div>
 
         </div>
+
+        <div className="w-[85%] sm:w-full flex flex-col items-center justify-center bg-gradient-to-bl from-white via-gray-100/90 to-gray-200/90 shadow-sm shadow-gray-300">
+          <h1 className="font-bold text-3xl pt-20 pb-10 xs:text-2xl sm:text-center">Browse Startups in Mbegu</h1>
+
+
+          <div className="flex flex-row gap-10 lg:flex-col">
+            {projects.map(project => (
+              <RecentProjects item={project} key={project.id} />
+            ))}
+          </div>
+          <div className="flex flex-row gap-10 lg:flex-col my-10">
+            {closings.map(closing => (
+              <ClosingProjects item={closing} key={closing.id} />
+            ))}
+          </div>
+
+        </div>
+
+
         <div className="flex flex-col items-center justify-center pt-20">
           <h1 className="font-bold text-3xl pb-5 lg:text-2xl tm:text-xl text-center">Mbegu Africa will be a full service investment</h1>
           <h1 className="font-bold text-3xl pb-5 lg:text-2xl tm:text-xl text-center">bank</h1>
@@ -151,13 +171,11 @@ const index = () => {
               </Link>
             </div>
           </Layout>
-          <Link href="https://mbegu.africa/portfolio" className="pt-[120px] pb-20">
+          <Link href="https://mbegu.africa/portfolio" className="pt-16 pb-10">
             <Button className="px-6 !rounded-[4px] text-lg !py-4 font-semibold text-whiter shadow-lg shadow-gray-400">
               Get started
             </Button>
           </Link>
-          <RecentProjects />
-          <ClosingProjects />
           <Subscribe />
         </div>
       </main>

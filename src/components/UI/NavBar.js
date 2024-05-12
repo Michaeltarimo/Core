@@ -5,10 +5,12 @@ import Link from 'next/link'
 import NavBarMobile from './NavBarMobile';
 import { BadgeCheckIcon, CurrencyDollarIcon, LightBulbIcon, PencilAltIcon, QuestionMarkCircleIcon, ShoppingBagIcon, UserAddIcon } from '@heroicons/react/solid';
 import DropLink from '@/components/UI/DropLink'
+import DropdownUser from '../User/Founder/DropUser';
 
 
 
 const NavBar = () => {
+
   const [active, setActive] = useState(false);
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false) 
@@ -25,6 +27,12 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     }
   }, [])
+
+  const currentUser = {
+        id:1,
+        username:"Michael Tarimo",
+        isFounder:true
+  }
 
 
   return (
@@ -99,8 +107,11 @@ const NavBar = () => {
                 ]}
           />
           <Link href="/" className="hover:text-theme og:hidden">Insights</Link>
-          <Link href="/login/page" className="hover:text-theme">Login</Link>
-          <Link href="/register/page" className="hover:text-theme">Sign Up</Link>
+          {!currentUser?.isFounder &&<Link href="/login/page" className="hover:text-theme">Login</Link>}
+          {!currentUser?.isFounder &&<Link href="/register/page" className="hover:text-theme">Sign Up</Link>}
+          {currentUser?.isFounder &&
+            <DropdownUser />
+          }
         </nav>
       </div>
       <NavBarMobile />

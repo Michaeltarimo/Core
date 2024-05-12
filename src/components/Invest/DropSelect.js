@@ -28,22 +28,22 @@ const DropSelect = ({ href, initialTitle = "Categories", className = "", dropdow
     };
 
     return (
-        <div className={`flex flex-col w-full group ${className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`flex flex-col w-full relative z-50 group ${className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <Link href={href} passHref>
                 <div className="flex items-center w-[280px] justify-center cursor-pointer">
                     <div className="flex w-2/3">
                     {selectedLanguage}
                     </div>
                     <div className="flex w-1/3">
-                    <ChevronDownIcon className="w-6" />
+                    <ChevronDownIcon className="w-6" /> 
                     </div>
 
                 </div>
             </Link>
             {dropdownItems.length > 0 && showDropdown && (
-                <div className=" mt-6 overflow-y-auto w-full h-[200px] py-1 bg-transparent rounded-2xl" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div className=" mt-6 overflow-y-auto w-full absolute top-3 right-5 h-[200px] py-1 bg-gray-200/90 sm:bg-gray-200 rounded-2xl" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     {dropdownItems.map((item, index) => (
-                        <div key={index} onClick={() => handleLanguageChange(item.title)} className="flex items-center justify-start hover:text-theme bg-transparent w-full py-3 font-extrabold text-dark/70 cursor-pointer">
+                        <div key={index} onClick={() => handleLanguageChange(item.title)} className="flex items-center justify-start hover:text-theme px-5 w-[80%] py-3 font-bold text-dark/70 cursor-pointer">
                             <span className="">{item.title}</span>
                         </div>
                     ))}

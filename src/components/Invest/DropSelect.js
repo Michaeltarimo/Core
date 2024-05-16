@@ -26,7 +26,7 @@ const DropSelect = ({ href, initialTitle = "Categories", className = "", dropdow
         setSelectedLanguage(language);
         setShowDropdown(false); // Optionally hide dropdown after selection
     };
-
+ 
     return (
         <div className={`flex flex-col w-full relative z-50 group ${className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <Link href={href} passHref>

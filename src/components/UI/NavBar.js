@@ -31,10 +31,10 @@ const NavBar = () => {
   const currentUser = {
         id:1,
         username:"Michael Tarimo",
-        isFounder:false
+        isFounder:false,
   }
 
-
+ 
   return (
     <>
       <div className={`flex md:hidden z-99  items-center bg-light rounded-b-lg  justify-between text-[15px] font-bold text-dark/70 pt-10 pb-8 ${active ? "sticky top-0 shadow-lg shadow-theme/80" : ""}`}>

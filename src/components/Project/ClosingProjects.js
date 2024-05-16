@@ -11,7 +11,7 @@ const ClosingProjects = ({ item }) => {
                             <img src={item.img} alt="" className="w-[300px] h-[200px] lg:w-[440px] lg:h-[300px] xs:w-[300px] xs:h-[160px] rounded-t-xl  shadow-theme shadow-lg " />
                             <button className="bg-red-600 w-full font-extrabold text-xs text-yellow-200 uppercase p-0.5   absolute bottom-0 left-0 transform translate-X-[10%]">{item.category}</button>
                         </div>
-                        <div className="rounded-lg shadow-theme shadow-sm w-[300px] px-4 py-4 z-10">
+                        <div className="rounded-lg shadow-theme shadow-sm w-[300px] lg:w-[440px] xs:w-[300px] px-4 py-4 z-10">
                             <h1 className="font-bold text-[16px] text-gray-800">{item.title}</h1>
                             <p className="text-xs font-medium text-gray-500 pb-4">{item.desc}</p>
                             <hr />

@@ -63,16 +63,16 @@ const page = () => {
                         <div className="flex w-1/2  p-0 items-center justify-center xl:hidden">
                             <Image src={banner} alt="banner" className="w-full h-screen rounded-lg" />
                         </div>
-                        <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-theme lg:p-6 bg-theme/70 rounded-lg">
+                        <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-gray-300 lg:p-6 bg-white xl:border-none rounded-lg">
                             <div className="items-center text-center justify-center">
                                 <span className="font-extrabold md:text-sm   text-dark/70">Join More than 0000 Verified Tanzanians</span>
                             </div>
                             <div className="flex p-4 gap-4 flex-row items-center justify-center">
                                 <Image src={google} alt="google" className="h-[60px] w-[60px] tm:w-[50px] tm:h-[50px] ls:w-[40px] ls:h-[40px] zs:w-[30px] zs:h-[30px] rounded-full bg-whiter/80" />
                                 <Image src={github} alt="github" className="h-[60px] w-[60px] tm:w-[50px] tm:h-[50px] ls:w-[40px] ls:h-[40px] zs:w-[30px] zs:h-[30px] rounded-full bg-whiter/80" />
-                                <Image src={linkedin} alt="github" className="h-[60px] w-[60px] tm:w-[50px] tm:h-[50px] ls:w-[40px] ls:h-[40px] zs:w-[30px] zs:h-[30px] rounded-full bg-whiter/80" />
+                                <Image src={linkedin} alt="github" className="h-[45px] w-[45px] tm:w-[35px] tm:h-[35px] ls:w-[25px] ls:h-[25px] zs:w-[15px] zs:h-[15px]" />
                             </div>
-                            <h1 className="p-4 font-bold text-whiter text-dark/70 tm:hidden">- - - - - - - - <b className="font-bold text-whiter text-dark/70 md:text-sm">OR</b> - - - - - - - -</h1>
+                            <h1 className="p-4 font-bold text-dark text-dark/70 tm:hidden">- - - - - - - - <b className="font-bol text-dark/70 md:text-sm">OR</b> - - - - - - - -</h1>
                             <h1 className="p-4 font-extrabold text-dark/70 hidden tm:block xs:text-sm">OR</h1>
                             <form >
                                 <div className="pt-3">
@@ -86,7 +86,7 @@ const page = () => {
                                                 name="email"
                                                 type="email"
                                                 className="ls:text-xs outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-20 ls:py-2" />
-                                            <HiAtSymbol className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-8 zs:right-3 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 ${isFocused ? 'text-green-500' : 'text-gray-400'}`} />
+                                            <HiAtSymbol className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-8 zs:right-3 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 ${isFocused ? 'text-theme' : 'text-gray-400'}`} />
                                         </label>
                                     </div>
 
@@ -100,7 +100,7 @@ const page = () => {
                                                 name="password"
                                                 type={`${show ? "text" : "password"}`}
                                                 className="ls:text-xs outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-20 ls:py-2" />
-                                            <HiFingerPrint onClick={() => setShow(!show)} className={`absolute right-8 bottom-4 zs:right-3 ls:bottom-2 rm:right-8 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 hover:text-green-500 cursor-pointer ${isFocused2 ? 'text-green-500' : 'text-gray-400'}`} />
+                                            <HiFingerPrint onClick={() => setShow(!show)} className={`absolute right-8 bottom-4 zs:right-3 ls:bottom-2 rm:right-8 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 hover:text-theme cursor-pointer ${isFocused2 ? 'text-theme' : 'text-gray-400'}`} />
                                         </label>
                                     </div>
                                     <div className="relative flex flex-row items-center justify-center pt-4">
@@ -113,10 +113,10 @@ const page = () => {
                                                 name="password"
                                                 type={`${show1 ? "text" : "password"}`}
                                                 className="ls:text-xs outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-20 ls:py-2" />
-                                            <HiFingerPrint onClick={() => setShow1(!show1)} className={`absolute right-8 bottom-4 zs:right-3 ls:bottom-2 rm:right-8 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 hover:text-green-500 cursor-pointer ${isFocused3 ? 'text-green-500' : 'text-gray-400'}`} />
+                                            <HiFingerPrint onClick={() => setShow1(!show1)} className={`absolute right-8 bottom-4 zs:right-3 ls:bottom-2 rm:right-8 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 hover:text-theme cursor-pointer ${isFocused3 ? 'text-theme' : 'text-gray-400'}`} />
                                         </label>
                                     </div>
-                                    <p className="font-semibold text-xs text-yellow-200 pt-3 xs:text-[9px] xs:text-center">At least 8 characters, a capital letter, a special character, and a number</p>
+                                    <p className="font-light text-xs text-dark pt-3 xs:text-[9px] xs:text-center">At least 8 characters, a capital letter, a special character, and a number</p>
                                     <div className="flex flex-col  items-center justify-center pt-4">
                                         <button
                                             type="submit"
@@ -124,7 +124,7 @@ const page = () => {
                                             className="border-2 text-whiter bg-dark/80 border-dark/80 text-center hover:bg-dark hover:border-theme hover:text-whiter font-bold text-sm  px-[200px] rm:px-[170px] p-3 rounded-xl tm:px-[135px] tm:py-3 xs:px-[120px] ls:px-[90px] ls:py-2">
                                             Continue
                                         </button>
-                                        <a href="#" className="font-bold text-yellow-200 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
+                                        <a href="#" className="font-bold text-yellow-600 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
                                     </div>
 
                                 </div>
@@ -139,12 +139,12 @@ const page = () => {
                         <div className="flex w-1/2 p-0 items-center justify-center xl:hidden">
                             <Image src={banner} alt="banner" className="w-full h-screen rounded-lg" />
                         </div>
-                        <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-theme bg-theme/70 lg:p-6 rounded-lg">
+                        <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-gray-300 xl:border-none bg-white lg:p-6 rounded-lg">
                             <div className="flex flex-col items-center justify-center">
                                 <div className="items-center rm:text-center justify-center pb-4">
                                     <span className="font-semibold uppercase md:text-sm tm:text-[10px]  text-whiter">Finish Signing up</span>
                                 </div>
-                                <p className="text-center font-bold text-xs text-yellow-200 pt-2">Enter your first & last name as they appear on your government ID</p>
+                                <p className="text-center font-bold text-xs text-dark pt-2">Enter your first & last name as they appear on your government ID</p>
                                 <div className="flex flex-col items-center justify-center pt-3">
                                     <div className="relative flex flex-row items-center justify-start pt-4">
                                         <label htmlFor="email">
@@ -156,7 +156,7 @@ const page = () => {
                                                 name="name"
                                                 type="text"
                                                 className="outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-16 ls:py-2 ls:text-xs" />
-                                            <HiOutlineUser className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-4 tm:right-4 tm:h-5 tm:w-5 h-6 w-6 ${isFocused ? 'text-green-500' : 'text-gray-400'}`} />
+                                            <HiOutlineUser className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-4 tm:right-4 tm:h-5 tm:w-5 h-6 w-6 ${isFocused ? 'text-theme' : 'text-gray-400'}`} />
                                         </label>
                                     </div>
 
@@ -170,7 +170,7 @@ const page = () => {
                                                 name="Last Name"
                                                 type="text"
                                                 className="outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-16 ls:py-2 ls:text-xs" />
-                                            <HiBadgeCheck className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-4 tm:right-4 tm:h-5 tm:w-5 h-6 w-6 ${isFocused2 ? 'text-green-500' : 'text-gray-400'}`} />
+                                            <HiBadgeCheck className={`absolute right-8 bottom-4 ls:bottom-2 rm:right-4 tm:right-4 tm:h-5 tm:w-5 h-6 w-6 ${isFocused2 ? 'text-theme' : 'text-gray-400'}`} />
                                         </label>
                                     </div>
 
@@ -182,7 +182,7 @@ const page = () => {
                                             className="h-5 w-5 text-green-500 border-gray-300 rounded focus:ring-green-500"
 
                                         />
-                                        <span className="ml-2 text-[10px] font-semibold text-gray-300">I would like to receive Mbegu newsletter and investment
+                                        <span className="ml-2 text-[10px] font-light text-dark">I would like to receive Mbegu newsletter and investment
                                             opportunities that are relevant to my interest
                                         </span>
                                     </div>
@@ -195,16 +195,16 @@ const page = () => {
                                             className="h-5 w-5 text-green-500 border-gray-300 rounded focus:ring-green-500"
 
                                         />
-                                        <span className="ml-2 text-[10px] font-semibold text-gray-300">
-                                            I have read and agreed to the sites&apos; <a href="#" className="font-bold text-yellow-200">educational materials</a>, risks
-                                            and <a href="#" className="font-bold text-red-200">compensation disclosure</a>
+                                        <span className="ml-2 text-[10px] font-light text-dark">
+                                            I have read and agreed to the sites&apos; <a href="#" className="font-bold text-yellow-600">educational materials</a>, risks
+                                            and <a href="#" className="font-bold text-red-600">compensation disclosure</a>
 
                                         </span>
                                     </div>
 
                                     <div className="flex items-center justify-center">
-                                        <p className=" font-bold text-[10px] text-light pt-6 pb-4 text-center">By signing up you agree with our <a href="#" className="font-bold text-yellow-200">Terms &  Conditions</a> &
-                                            <a href="#" className="font-bold text-yellow-200"> Privacy Policy</a></p>
+                                        <p className=" font-bold text-[10px] text-dark pt-6 pb-4 text-center">By signing up you agree with our <a href="#" className="font-bold text-yellow-600">Terms &  Conditions</a> &
+                                            <a href="#" className="font-bold text-yellow-600"> Privacy Policy</a></p>
                                     </div>
 
                                     <div className="flex flex-col  items-center justify-center pt-4">
@@ -221,7 +221,7 @@ const page = () => {
                                             className="border-2 text-whiter bg-dark/80 border-dark/80 text-center hover:bg-dark hover:border-theme hover:text-whiter font-bold text-sm  px-[210px] rm:px-[170px] p-3 rounded-xl tm:px-[135px] tm:py-3 xs:px-[120px] ls:px-[90px] bs:px-20 ls:py-2">
                                             Back
                                         </button>
-                                        <a href="#" className="font-bold text-yellow-200 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
+                                        <a href="#" className="font-bold text-yellow-600 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
                                     </div>
                                 </div>
                             </div>

@@ -87,7 +87,7 @@ const Page = () => {
           <div className="flex items-center justify-between text-sm bg-gray-200 w-[280px] sm:w-[250px] font-extrabold px-5 py-2 rounded-xl">
             <h1>
               <DropSelect
-                href="#"
+                href=""
                 title="Categories"
                 className="flex items-start justify-between bg-transparent  rounded-xl"
                 dropdownItems={[
@@ -121,7 +121,7 @@ const Page = () => {
           <div className="flex items-center justify-between text-sm bg-gray-200 w-[280px] sm:w-[250px] font-extrabold px-5 py-2 rounded-xl">
             <h1>
               <SortSelect
-                href="#"
+                href=""
                 title="Sort By Status"
                 className="flex items-start justify-between bg-transparent  rounded-xl"
                 dropdownItems={[
@@ -161,7 +161,7 @@ const Page = () => {
             {trending.map(card => (
               <MostTrending item={card} key={card.id} />
             ))}
-          </div>
+          </div> 
         </div>
         {/**Projects section ends here */}
 

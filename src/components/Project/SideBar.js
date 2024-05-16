@@ -82,7 +82,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                    <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Marketplace</Link>
+                                                    <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Marketplace</Link>
                                             </ListItem>
                                         </List>
                                     </AccordionBody>
@@ -114,7 +114,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Raise Capital</Link>
+                                                <Link href="/founder/capital/page" className="text-sm font-semibold hover:text-theme text-dark">Raise Capital</Link>
                                             </ListItem>
                                             
                                             <ListItem className="flex items-start justify-start gap-10 p-3">
@@ -124,7 +124,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                    <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Learn How To Do it</Link>
+                                                    <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Learn How To Do it</Link>
                                             </ListItem>
                                         </List>
                                     </AccordionBody>
@@ -156,7 +156,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">About Us</Link>
+                                                <Link href="/company/page" className="text-sm font-semibold hover:text-theme text-dark">About Us</Link>
                                             </ListItem>
                                             
                                             <ListItem className="flex items-start justify-start gap-10 p-3">
@@ -166,7 +166,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                    <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Roadmap</Link>
+                                                    <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Roadmap</Link>
                                             </ListItem>
                                         </List>
                                     </AccordionBody>
@@ -199,7 +199,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Blog</Link>
+                                                <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Blog</Link>
                                             </ListItem>
                                             
                                             <ListItem className="flex items-start justify-start gap-10 p-3">
@@ -209,7 +209,7 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                    <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Investor FAQs</Link>
+                                                    <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Investor FAQs</Link>
                                             </ListItem>
 
                                             <ListItem className="flex items-start justify-start gap-10 p-3">
@@ -219,14 +219,14 @@ const SideBar = () => {
                                                         className="h-5 w-5 text-theme"
                                                     />
                                                 </ListItemPrefix>
-                                                <Link href="/invest/page" className="text-sm font-semibold hover:text-theme text-dark">Success Stories</Link>
+                                                <Link href="" className="text-sm font-semibold hover:text-theme text-dark">Success Stories</Link>
                                             </ListItem>
                                         </List>
                                     </AccordionBody>
                                 </Accordion>
 
                                 <ListItem className="">
-                                    <Link href="/authetication/login" className=" flex items-start justify-start gap-10 p-">
+                                    <Link href="" className=" flex items-start justify-start gap-10 p-">
                                     <ListItemPrefix>
                                         <FaNewspaper className="h-5 w-5 text-yellow-500" />
                                     </ListItemPrefix>

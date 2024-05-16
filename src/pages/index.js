@@ -83,7 +83,7 @@ const index = () => {
             </nav>
             <nav className="flex flex-col items-center gap-2">
               <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">0000+</h1>
-              <h1 className="font-bold text-lg lg:text-base tm:text-lg">Investment Opportunities</h1>
+              <h1 className="font-bold text-lg lg:text-base tm:text-lg">Registered Projects</h1>
             </nav>
             <nav className="flex flex-col items-center gap-2">
               <h1 className="font-extrabold text-5xl lg:text-3xl sm:text-2xl tm:text-5xl">000+</h1>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 import { HeartIcon } from '@heroicons/react/outline';
+import SideBar from './SideBar';
 
 
 
@@ -59,13 +60,18 @@ const NavBar = () => {
     <>
       <div className={`hidden z-99 md:flex  items-center bg-light rounded-b-lg  justify-between text-[15px] font-bold text-dark/70 pt-10 pb-8 ${active ? "sticky top-0 shadow-lg shadow-theme/80" : ""}`}>
 
-        <nav className="flex items-center gap-5 ml-10">
-          <button className="flex-col justify-center items-center hidden md:flex" onClick={handleClick}>
+        <nav className="flex items-center gap-5 ml-5">
+          {/**<button className="flex-col justify-center items-center hidden md:flex" onClick={handleClick}>
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
             <span className={`bg-dark  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
-          </button>
-          <Image src={logo} alt="logo" className="w-12 h-12 md:hidden rounded-full shadow-lg shadow-theme bg-green-200" />
+  </button>*/}
+          <div className="z-999 bg-transparent">
+              <SideBar />
+            </div>
+          <Link href="/">
+            <Image src={logo} alt="logo" className="w-12 h-12 rounded-full shadow-lg shadow-theme bg-green-200" />
+          </Link>
           <h1 className="text-xl font-serif md:hidden">MBEGU-<b className="text-xl font-extrabold italic">AFRICA</b></h1>
         </nav>
         <nav className="flex items-center justify-center gap-8 mr-10">

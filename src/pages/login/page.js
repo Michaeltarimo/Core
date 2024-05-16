@@ -39,11 +39,11 @@ const page = () => {
             </Head>
             <TransitionEffect />
             <NavBarLogin />
-            <div className="flex flex-row  p-20 xl:p-10 bg-light xl:items-center xl:justify-center">
+            <div className="flex flex-row  p-20 xl:p-10 sm:p-0 bg-light xl:items-center xl:justify-center">
                 <div className="flex w-1/2  p-0 items-center justify-center xl:hidden">
                     <Image src={banner} alt="banner" className="w-full h-screen rounded-lg" />
                 </div>
-                <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-theme lg:p-6 bg-theme/70 rounded-lg">
+                <div className="flex flex-col w-1/2 xl:w-full border items-center justify-center border-gray-300 lg:p-6 bg-white xl:border-none rounded-lg">
                     <div className="items-center rm:text-center justify-center">
                         <span className="font-extrabold md:text-sm  text-dark/70">Join More than 0000 Verified Tanzanians</span>
                     </div>
@@ -52,9 +52,9 @@ const page = () => {
                             <Image src={google} alt="google" className="h-[60px] w-[60px] tm:w-[50px] tm:h-[50px] ls:w-[40px] ls:h-[40px] zs:w-[30px] zs:h-[30px] rounded-full bg-whiter/80" />
                         </button>
                         <Image src={github} alt="github" className="h-[60px] w-[60px] tm:w-[50px] tm:h-[50px] ls:w-[40px] ls:h-[40px] zs:w-[30px] zs:h-[30px] rounded-full bg-whiter/80" />
-                        <Image src={linkedin} alt="github" className="h-[63px] w-[63px] tm:w-[53px] tm:h-[53px] ls:w-[43px] ls:h-[43px] zs:w-[33px] zs:h-[33px]" />
+                        <Image src={linkedin} alt="github" className="h-[45px] w-[45px] tm:w-[35px] tm:h-[35px] ls:w-[25px] ls:h-[25px] zs:w-[15px] zs:h-[15px]" />
                     </div>
-                    <h1 className="p-4 font-bold text-whiter text-dark/70 tm:hidden">- - - - - - - - <b className="font-bold text-whiter text-dark/70 md:text-sm">OR</b> - - - - - - - -</h1>
+                    <h1 className="p-4 font-bold text-dark text-dark/70 tm:hidden">- - - - - - - - <b className="font-bold text-dark/70 md:text-sm">OR</b> - - - - - - - -</h1>
                     <h1 className="p-4 font-extrabold text-dark/70 hidden tm:block xs:text-sm">OR</h1>
                     <form >
                         <div className="pt-3">
@@ -68,7 +68,7 @@ const page = () => {
                                         name="email"
                                         type="email"
                                         className="outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-16 ls:py-2 ls:text-xs" />
-                                    <HiAtSymbol className={`absolute right-8 bottom-4 rm:right-4 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 ls:bottom-2 ls:right-3 ${isFocused ? 'text-green-500' : 'text-gray-400'}`} />
+                                    <HiAtSymbol className={`absolute right-8 bottom-4 rm:right-4 tm:right-6 tm:h-5 tm:w-5 h-6 w-6 ls:bottom-2 ls:right-3 ${isFocused ? 'text-theme' : 'text-gray-400'}`} />
                                 </label>
                             </div>
 
@@ -82,7 +82,7 @@ const page = () => {
                                         name="password"
                                         type={`${show ? "text" : "password"}`}
                                         className="ls:text-xs outline-none shadow-sm shadow-gray-400 font-bold text-sm bg-gray-200 pr-[250px] p-4 rounded-sm rm:pr-[200px] tm:pr-[130px] tm:py-3 xs:pr-[100px] ls:pr-16 ls:py-2" />
-                                    <HiFingerPrint onClick={() => setShow(!show)} className={`absolute right-8 bottom-4 rm:right-4 tm:right-6 ls:bottom-2 ls:right-3 tm:h-5 tm:w-5 h-6 w-6 hover:text-green-500 cursor-pointer ${isFocused2 ? 'text-green-500' : 'text-gray-400'}`} />
+                                    <HiFingerPrint onClick={() => setShow(!show)} className={`absolute right-8 bottom-4 rm:right-4 tm:right-6 ls:bottom-2 ls:right-3 tm:h-5 tm:w-5 h-6 w-6 hover:text-theme cursor-pointer ${isFocused2 ? 'text-theme' : 'text-gray-400'}`} />
                                 </label>
                             </div>
                             <div className="flex flex-col  items-center justify-center pt-10">
@@ -91,7 +91,7 @@ const page = () => {
                                     className="border-2 text-whiter bg-dark/80 border-dark/80 text-center hover:bg-dark hover:border-theme hover:text-whiter font-bold text-sm  px-[210px] rm:px-[170px] p-3 rounded-xl tm:px-[135px] tm:py-3 xs:px-[120px] ls:px-[90px] ls:py-2">
                                     Login
                                 </button>
-                                <a href="#" className="font-bold text-yellow-200 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
+                                <a href="#" className="font-bold text-yellow-600 text-sm pt-6 hover:text-dark">Forgot Password ?</a>
                             </div>
 
                         </div>
